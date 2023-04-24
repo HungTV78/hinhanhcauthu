@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Lionel Messi</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            scroll-behavior: smooth;
+        }
+        .menu{
+            width:100%;
+            background-color: #ff0000;
+            height:40px;
+        }
+        .list--menu{
+            display:flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+        .list--menu a{
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 40px;
+            padding: 20px;
+        }
+        .list--menu li:hover{
+            background-color: #ccc;
+        }
+        .list--menu a:hover{
+            color:yellow;
+        }
+        .container{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows: 350px 100px 350px;
+            grid-gap: 10px;
+            padding: 20px;
+            grid-template-areas: 
+            "h1 h1 h3 h4"
+            "h5 h6 h3 h4"
+            "h5 h6 h7 h7"
+            ;
+        }
+        .list--item{
+           border-radius: 10px;
+           overflow:hidden;
+
+        }
+        .list--item img {
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+        .list--item:first-child{
+            grid-area: h1;
+        }
+        .list--item:nth-child(2){
+            grid-area: h3 ;
+        }
+        .list--item:nth-child(3){
+            grid-area: h4;
+        }
+        .list--item:nth-child(4){
+            grid-area: h5;
+        }
+        .list--item:nth-child(5){
+            grid-area: h6;
+        }
+        .list--item:last-child{
+            grid-area: h7;
+        }
+        .container-one{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           grid-template-rows: 450px;
+           padding: 20px;
+           column-gap: 10px;
+            grid-template-areas: 
+            "h1 h2 h3 h4"
+            ;
+        }
+        .list__item-one{
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .list__item-one img{
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .list__item-one:nth-child(1){
+            grid-area: h1;
+        }
+        .list__item-one:nth-child(2){
+            grid-area: h2 ;
+        }
+        .list__item-one:nth-child(3){
+            grid-area: h3;
+        }
+        .list__item-one:nth-child(4){
+            grid-area: h4;
+        }
+        #dow{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position:fixed;
+            width:30px;
+            height:30px;
+            font-size: 25px;
+            bottom: 40px;
+            right: 0px;
+            background-color: #ff0000;
+            border-radius: 50%;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <ul class="list--menu">
+            <li><a href="./messi.html">Lionel Messi</a></li>
+            <li><a href="./neymar.html">Neymar Júnior</a></li>
+            <li><a href="./kevin.html">Kevin De Bruyne</a></li>
+            <li><a href="./ronaldo.html">Cristiano Ronaldo</a></li>
+            <li><a href="">Mesut Özil</a></li>
+        </ul>
+    </div>
+    <!-- Hình Messi ở FCB -->
+    <div class="container">
+        <div class="list--item">
+            <img src="./hinh1.jpg" alt="" >
+        </div>
+        <div class="list--item">
+            <img src="./hinh2.jpg" alt="" >
+        </div>
+        <div class="list--item">
+            <img src="./hinh3.jpg" alt="" >
+
+        </div>
+        <div class="list--item">
+            <img src="./hinh5.jpg" alt="" >
+
+        </div>
+        <div class="list--item">
+            <img src="./hinh6.jpeg" alt="" >
+
+        </div>
+        <div class="list--item">
+            <img src="./hinh7.jpg" alt="" >
+        </div>
+    </div>
+
+    <div class="container-one">
+        <div class="list__item-one">
+            <img src="./hinhbrc1.jpg" alt="" >
+        </div>
+        <div class="list__item-one">
+            <img src="./hinh4brc.jpg" alt="" >
+        </div>
+        <div class="list__item-one">
+            <img src="./hinh3brc.jpg" alt="" >
+        </div>
+        <div class="list__item-one">
+            <img src="./hinh2brc.jpg" alt="" >
+        </div>
+    </div>
+    <div class="container-one">
+        <div class="list__item-one">
+            <img src="./hinh5brc.jpg" alt="" >
+        </div>
+        <div class="list__item-one">
+            <img src="./hinh6brc.jpg" alt="" >
+        </div>
+        <div class="list__item-one">
+            <img src="./hinh7brc.jpg" alt="" >
+        </div>
+        <div class="list__item-one">
+            <img src="./hinh8brc.jpg" alt="" >
+        </div>
+    </div>
+    <div class="container-one">
+        <div class="list__item-one">
+            <img src="./hinh9brc.jpg" alt="" >
+        </div>
+        <div class="list__item-one">
+            <img src="./hinh10brc.jpg" alt="" >
+        </div>
+        <div class="list__item-one">
+            <img src="./hinh11brc.jpg" alt="" >
+        </div>
+        <div class="list__item-one">
+            <img src="./hinh12brc.jpg" alt="" >
+        </div>
+    </div>
+
+
+    <!-- Hình Messi ở PSG -->
+        <div class="container">
+            <div class="list--item">
+                <img src="./hinhpr1.png" alt="" >
+            </div>
+            <div class="list--item">
+                <img src="./hinhpr7.jpg" alt="" >
+            </div>
+            <div class="list--item">
+                <img src="./hinhpr3.jpg" alt="" >
+    
+            </div>
+            <div class="list--item">
+                <img src="./hinhpr4.jpg" alt="" >
+    
+            </div>
+            <div class="list--item">
+                <img src="./hinhpr5.jpg" alt="" >
+    
+            </div>
+            <div class="list--item">
+                <img src="./hinhpr6.webp" alt="" >
+            </div>
+        </div>
+        <div class="container-one">
+            <div class="list__item-one">
+                <img src="./hinhpr8.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinhpr9.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinhpr10.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinhpr11.jpg" alt="" >
+            </div>
+        </div>
+        <div class="container-one">
+            <div class="list__item-one">
+                <img src="./hinhpr12.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinhpr13.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinhpr14.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinhpr2.jpg" alt="" >
+            </div>
+        </div>
+        <div class="container-one">
+            <div class="list__item-one">
+                <img src="./hinhpr15.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinhpr16.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinhpr17.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinhpr18.jpg" alt="" >
+            </div>
+        </div>
+
+
+        <!-- Hình Messi ở ARG -->
+        <div class="container">
+            <div class="list--item">
+                <img src="./hinharg1.jpg" alt="" >
+            </div>
+            <div class="list--item">
+                <img src="./hinharg2.jpg" alt="" >
+            </div>
+            <div class="list--item">
+                <img src="./hinharg3.jpg" alt="" >
+    
+            </div>
+            <div class="list--item">
+                <img src="./hinharg4.jpg" alt="" >
+    
+            </div>
+            <div class="list--item">
+                <img src="./hinharg5.jpg" alt="" >
+    
+            </div>
+            <div class="list--item">
+                <img src="./hinharg6.webp" alt="" >
+            </div>
+        </div>
+        <div class="container-one">
+            <div class="list__item-one">
+                <img src="./hinharg15.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinharg16.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinharg17.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinharg18.jpg" alt="" >
+            </div>
+        </div>
+        <div class="container-one">
+            <div class="list__item-one">
+                <img src="./hinharg7.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinharg8.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinharg9.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinharg10.jpg" alt="" >
+            </div>
+        </div>
+        <div class="container-one">
+            <div class="list__item-one">
+                <img src="./hinharg11.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinharg12.jpg" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinharg13.webp" alt="" >
+            </div>
+            <div class="list__item-one">
+                <img src="./hinharg14.jpg" alt="" >
+            </div>
+        </div>
+        <div id="dow">
+            <i class='bx bx-chevron-up'></i>
+         </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function()
+    {
+        $(window).scroll(function(){
+            if($(this).scrollTop()){
+                $('#dow').fadeIn();
+            }
+            else {
+                $('#dow').fadeOut();
+            }
+        });
+        $("#dow").click(function(){
+            $(`html,body`).animate({
+                scrollTop: 0
+            },500);
+        });
+    });
+</script>
+</html>
+
+
